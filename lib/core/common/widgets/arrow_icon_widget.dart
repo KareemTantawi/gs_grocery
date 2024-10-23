@@ -1,24 +1,29 @@
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
-import 'package:gs_grocery/core/styles/images/app_image.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class ArrowIconWidget extends StatelessWidget {
-  const ArrowIconWidget({
+class ArrowBackWidget extends StatelessWidget {
+  const ArrowBackWidget({
     super.key,
-    required this.onTap,
   });
-  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.topLeft,
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 20.h),
       child: InkWell(
-        onTap: onTap,
-        child: Image.asset(
-          AppImages.arrowIcon,
-          height: 24.h,
-          width: 24.w,
+        borderRadius: BorderRadius.circular(70),
+        onTap: () {},
+        child: Container(
+          width: 45.w,
+          height: 45.h,
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            shape: BoxShape.circle,
+          ),
+          child: Icon(
+            Icons.arrow_back_ios_new_rounded,
+            size: 20.sp,
+          ),
         ),
       ),
     );

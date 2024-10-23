@@ -17,7 +17,7 @@ class AppButtonWidget extends StatelessWidget {
       onTap: onTap,
       child: Container(
           width: double.infinity,
-          height: 45,
+          height: 50,
           decoration: ShapeDecoration(
             gradient: const LinearGradient(
               begin: Alignment(-0.89, -0.45),
