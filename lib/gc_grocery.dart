@@ -16,7 +16,7 @@ class GcGrocery extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         // home: Scaffold(),
         onGenerateRoute: appRouter.generateRoute,
-        initialRoute: Routes.registerScreen,
+        initialRoute: Routes.loginScreen,
       ),
     );
   }
