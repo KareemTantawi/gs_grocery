@@ -81,8 +81,10 @@ class LoginScreen extends StatelessWidget {
                         ),
                         verticalSpace(24),
                         AppButtonWidget(
-                          onTap: () {},
-                          title: 'Register',
+                          onTap: () {
+                            context.pushName(Routes.forgetPasswordScreen);
+                          },
+                          title: 'LOG IN',
                         ),
                         verticalSpace(12),
                         InkWell(
