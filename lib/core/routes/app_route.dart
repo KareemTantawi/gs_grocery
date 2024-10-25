@@ -4,6 +4,7 @@ import 'package:gs_grocery/features/auth/presentation/screens/login_screen.dart'
 import 'package:gs_grocery/features/auth/presentation/screens/register_screen.dart';
 
 import '../../features/auth/presentation/screens/forget_password_screen.dart';
+import '../../features/auth/presentation/screens/verification_screen.dart';
 
 class AppRouter {
   Route<dynamic> generateRoute(RouteSettings setting) {
@@ -19,6 +20,10 @@ class AppRouter {
       case Routes.forgetPasswordScreen:
         return MaterialPageRoute(
           builder: (_) => const ForgetPasswordScreen(),
+        );
+      case Routes.otpVerificationScreen:
+        return MaterialPageRoute(
+          builder: (_) => const VerificationScreen(),
         );
 
       default:

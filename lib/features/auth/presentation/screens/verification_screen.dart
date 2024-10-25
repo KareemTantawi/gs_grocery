@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gs_grocery/core/common/widgets/app_button_widget.dart';
-import 'package:gs_grocery/core/extension/context_extension.dart';
 import 'package:gs_grocery/core/utils/spacing.dart';
 import 'package:gs_grocery/features/auth/presentation/screens/widgets/helper_text_widget.dart';
+import 'package:gs_grocery/features/auth/presentation/screens/widgets/otp_verification_widget.dart';
 import 'package:gs_grocery/features/auth/presentation/screens/widgets/welcome_text_widget.dart';
 
-import '../../../../core/common/widgets/app_text_feild.dart';
 import '../../../../core/common/widgets/arrow_icon_widget.dart';
-import '../../../../core/routes/routes.dart';
 
-class ForgetPasswordScreen extends StatelessWidget {
-  const ForgetPasswordScreen({super.key});
+class VerificationScreen extends StatelessWidget {
+  const VerificationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +21,11 @@ class ForgetPasswordScreen extends StatelessWidget {
           children: [
             const ArrowBackWidget(),
             const WelcomeTextWidget(
-              text: 'Forget Password',
+              text: 'Verification',
             ),
             verticalSpace(6),
             const HelperTextWidget(
-              text: 'Please ,login in your existing account',
+              text: 'We have sent a code to your email',
             ),
             verticalSpace(24),
             Expanded(
@@ -48,21 +46,21 @@ class ForgetPasswordScreen extends StatelessWidget {
                     physics: const BouncingScrollPhysics(),
                     child: Column(
                       children: [
-                        verticalSpace(20),
-                        AppTextField(
-                          hintText: 'Email',
+                        OTPVerificationWidget(
+                          controllers: [
+                            TextEditingController(),
+                            TextEditingController(),
+                            TextEditingController(),
+                            TextEditingController(),
+                          ],
                           onChanged: (value) {},
-                          onFieldSubmitted: (value) {},
-                          textEditingController: TextEditingController(),
-                          title: 'Email',
-                          validator: (value) {},
                         ),
-                        verticalSpace(24),
+                        verticalSpace(16),
                         AppButtonWidget(
                           onTap: () {
-                            context.pushName(Routes.otpVerificationScreen);
+                            // context.pushName(Routes.forgetPasswordScreen);
                           },
-                          title: 'Send Code',
+                          title: 'VERIFY',
                         ),
                       ],
                     ),
