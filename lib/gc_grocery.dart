@@ -14,9 +14,9 @@ class GcGrocery extends StatelessWidget {
       minTextAdapt: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        // home: Scaffold(),
+        // home: Onboarding1(),
         onGenerateRoute: appRouter.generateRoute,
-        initialRoute: Routes.loginScreen,
+        initialRoute: Routes.onBoardingScreen,
       ),
     );
   }

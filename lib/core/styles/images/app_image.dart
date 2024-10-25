@@ -1,7 +1,7 @@
 class AppImages {
-  static const String splashLogo = 'assets/logo/splash_logo.png';
-  static const String googleIcon = 'assets/icons/google_icon.png';
-  static const String appleIcon = 'assets/icons/apple_icon.png';
+  static const String onBoarding1 = 'assets/images/OnBoarding1.png';
+  static const String onBoarding2 = 'assets/images/OnBoarding2.png';
+  static const String onBoarding3 = 'assets/images/OnBoarding3.png';
   static const String arrowIcon = 'assets/icons/arrow-left.png';
   static const String createProfileIcon =
       'assets/images/create_profile_logo.svg';
