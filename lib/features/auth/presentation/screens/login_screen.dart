@@ -56,7 +56,9 @@ class LoginScreen extends StatelessWidget {
                           onFieldSubmitted: (value) {},
                           textEditingController: TextEditingController(),
                           title: 'Email',
-                          validator: (value) {},
+                          validator: (value) {
+                            return null;
+                          },
                         ),
                         verticalSpace(24),
                         AppTextField(
@@ -65,7 +67,9 @@ class LoginScreen extends StatelessWidget {
                           onFieldSubmitted: (value) {},
                           textEditingController: TextEditingController(),
                           title: 'Password',
-                          validator: (value) {},
+                          validator: (value) {
+                            return null;
+                          },
                         ),
                         Align(
                           alignment: Alignment.centerRight,

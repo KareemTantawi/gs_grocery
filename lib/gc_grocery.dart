@@ -1,3 +1,4 @@
+// import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gs_grocery/core/routes/app_route.dart';
@@ -14,6 +15,9 @@ class GcGrocery extends StatelessWidget {
       minTextAdapt: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        // useInheritedMediaQuery: true,
+        // locale: DevicePreview.locale(context),
+        // builder: DevicePreview.appBuilder,
         // home: Onboarding1(),
         onGenerateRoute: appRouter.generateRoute,
         initialRoute: Routes.onBoardingScreen,

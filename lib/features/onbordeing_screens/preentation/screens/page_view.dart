@@ -20,7 +20,7 @@ class Onboarding1 extends StatelessWidget {
           PageViewBodyWidget(
             image: AppImages.onBoarding1,
             controller: _pageController,
-            title: 'Get all your loved foods in one place',
+            title: 'All your favorites',
             onTap: () {
               _pageController.nextPage(
                 duration: const Duration(milliseconds: 500),
@@ -34,7 +34,7 @@ class Onboarding1 extends StatelessWidget {
           PageViewBodyWidget(
             image: AppImages.onBoarding2,
             controller: _pageController,
-            title: 'Get all your loved foods in one place',
+            title: 'All your favorites',
             onTap: () {
               _pageController.nextPage(
                 duration: const Duration(milliseconds: 500),
@@ -48,7 +48,7 @@ class Onboarding1 extends StatelessWidget {
           PageViewBodyWidget(
             image: AppImages.onBoarding3,
             controller: _pageController,
-            title: 'Get all your loved foods in one place',
+            title: 'Order from choosen chef',
             onTap: () {
               _pageController.nextPage(
                 duration: const Duration(milliseconds: 500),
@@ -62,12 +62,8 @@ class Onboarding1 extends StatelessWidget {
           PageViewBodyWidget(
             image: AppImages.onBoarding3,
             controller: _pageController,
-            title: 'Get all your loved foods in one place',
+            title: 'Free delivery offers',
             onTap: () {
-              // _pageController.nextPage(
-              //   duration: const Duration(milliseconds: 500),
-              //   curve: Curves.easeInOut,
-              // );
               context.pushReplacementNamed(Routes.loginScreen);
             },
             onPressed: () {

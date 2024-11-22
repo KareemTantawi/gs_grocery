@@ -35,17 +35,17 @@ class PageViewBodyWidget extends StatelessWidget {
           Text(
             title,
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 22.sp,
+            style: const TextStyle(
+              fontSize: 22,
               fontWeight: FontWeight.bold,
             ),
           ),
           verticalSpace(10),
-          Text(
+          const Text(
             'Get all your loved foods in one once place, you just place the orer we do the rest',
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 16.sp,
+              fontSize: 16,
               fontWeight: FontWeight.w400,
               color: Colors.grey,
             ),

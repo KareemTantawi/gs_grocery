@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HelperTextWidget extends StatelessWidget {
   const HelperTextWidget({
@@ -16,7 +15,7 @@ class HelperTextWidget extends StatelessWidget {
         textAlign: TextAlign.center,
         style: TextStyle(
           color: Colors.white.withOpacity(0.8),
-          fontSize: 16.sp,
+          fontSize: 16,
         ),
       ),
     );

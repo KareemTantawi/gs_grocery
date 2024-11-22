@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class WelcomeTextWidget extends StatelessWidget {
   const WelcomeTextWidget({
@@ -14,9 +13,9 @@ class WelcomeTextWidget extends StatelessWidget {
       child: Text(
         text,
         textAlign: TextAlign.center,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.white,
-          fontSize: 30.sp,
+          fontSize: 30,
           fontWeight: FontWeight.bold,
         ),
       ),

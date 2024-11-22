@@ -52,7 +52,9 @@ class RegisterScreen extends StatelessWidget {
                           onFieldSubmitted: (value) {},
                           textEditingController: TextEditingController(),
                           title: 'Name',
-                          validator: (value) {},
+                          validator: (value) {
+                            return null;
+                          },
                         ),
                         verticalSpace(24),
                         AppTextField(
@@ -61,7 +63,9 @@ class RegisterScreen extends StatelessWidget {
                           onFieldSubmitted: (value) {},
                           textEditingController: TextEditingController(),
                           title: 'Email',
-                          validator: (value) {},
+                          validator: (value) {
+                            return null;
+                          },
                         ),
                         verticalSpace(24),
                         AppTextField(
@@ -70,7 +74,9 @@ class RegisterScreen extends StatelessWidget {
                           onFieldSubmitted: (value) {},
                           textEditingController: TextEditingController(),
                           title: 'Password',
-                          validator: (value) {},
+                          validator: (value) {
+                            return null;
+                          },
                         ),
                         verticalSpace(24),
                         AppTextField(
@@ -79,7 +85,9 @@ class RegisterScreen extends StatelessWidget {
                           onFieldSubmitted: (value) {},
                           textEditingController: TextEditingController(),
                           title: 'Re-Type Password',
-                          validator: (value) {},
+                          validator: (value) {
+                            return null;
+                          },
                         ),
                         verticalSpace(36),
                         AppButtonWidget(

@@ -14,15 +14,15 @@ class ArrowBackWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(70),
         onTap: () {},
         child: Container(
-          width: 45.w,
-          height: 45.h,
+          width: 45,
+          height: 45,
           decoration: const BoxDecoration(
             color: Colors.white,
             shape: BoxShape.circle,
           ),
-          child: Icon(
+          child: const Icon(
             Icons.arrow_back_ios_new_rounded,
-            size: 20.sp,
+            size: 20,
           ),
         ),
       ),

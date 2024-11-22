@@ -55,7 +55,9 @@ class ForgetPasswordScreen extends StatelessWidget {
                           onFieldSubmitted: (value) {},
                           textEditingController: TextEditingController(),
                           title: 'Email',
-                          validator: (value) {},
+                          validator: (value) {
+                            return null;
+                          },
                         ),
                         verticalSpace(24),
                         AppButtonWidget(
