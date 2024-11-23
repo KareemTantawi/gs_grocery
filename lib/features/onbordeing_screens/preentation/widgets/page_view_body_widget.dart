@@ -26,7 +26,7 @@ class PageViewBodyWidget extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 26.h),
       child: Column(
         children: [
-          verticalSpace(60),
+          verticalSpace(80),
           Image.asset(
             image,
             height: 260.h,
@@ -50,7 +50,7 @@ class PageViewBodyWidget extends StatelessWidget {
               color: Colors.grey,
             ),
           ),
-          verticalSpace(40),
+          verticalSpace(150),
           SmoothPageIndicator(
             controller: controller,
             count: 4,
